@@ -1,6 +1,6 @@
 {
   "name": "bilibili-live-ws-vue3",
-  "version": "6.2.7",
+  "version": "6.2.8",
   "description": "Bilibili Live WebSocket/TCP API",
   "type": "commonjs",
   "main": "index.js",
@@ -56,7 +56,5 @@
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
   },
-  "peerDependencies": {
-
-  }
+  "peerDependencies": {}
 }
