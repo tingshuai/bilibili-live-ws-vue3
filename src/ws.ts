@@ -19,7 +19,7 @@ class WebSocket extends EventEmitter {
     this.ws = ws
 
     ws.onopen = () => this.emit('open')
-    ws.onmessage = isNode ? ({ data }) => this.emit('message', data) : async ({ data }) => this.emit('message', Buffer.from(await new Response(data as unknown as InstanceType<typeof Blob>).arrayBuffer()))
+    ws.onmessage = isNode ? ({ data }) => this.emit('message', data) : async ({ data }) => this.emit('message', require('buffer').Buffer.from(await new Response(data as unknown as InstanceType<typeof Blob>).arrayBuffer()))
     ws.onerror = () => this.emit('error')
     ws.onclose = () => this.emit('close')
   }
