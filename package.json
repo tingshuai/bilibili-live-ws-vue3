@@ -33,11 +33,9 @@
   "homepage": "https://github.com/tingshuai/bilibili-live-ws-vue3#readme",
   "dependencies": {
     "array-flat-polyfill": "^1.0.1",
-    "isomorphic-ws": "^4.0.1",
-    "ws": "^8.2.3",
     "buffer": "^6.0.3",
-    "events": "^3.3.0",
-    "pako": "^2.0.4"
+    "isomorphic-ws": "^4.0.1",
+    "ws": "^8.2.3"
   },
   "optionalDependencies": {
     "got": "^11.1.4"
@@ -56,5 +54,8 @@
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
   },
-  "peerDependencies": {}
+  "peerDependencies": {
+    "events": "^3.3.0",
+    "pako": "^2.0.4"
+  }
 }
