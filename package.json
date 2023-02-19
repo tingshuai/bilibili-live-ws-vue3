@@ -1,6 +1,6 @@
 {
   "name": "bilibili-live-ws-vue3",
-  "version": "6.2.5",
+  "version": "6.2.6",
   "description": "Bilibili Live WebSocket/TCP API",
   "type": "commonjs",
   "main": "index.js",
